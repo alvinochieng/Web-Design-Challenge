@@ -17,7 +17,12 @@ body{
     align-items: right;
 }
 
-p{
-    border-radius: 0px;
-    background-color: rgb(246, 252, 246);
+.sel{
+    border: 0px;
+    outline: 0px;
+   width: auto;
+}
+
+a {
+    color: inherit;
 }

@@ -13,48 +13,78 @@
 </head>
 
 <nav class="navbar">
-  <div class="container">
-<select>
-  <option>Plots</option>
-  <option>Max Temperature</option>
-  <option>Humidity</option>
-  <option>Cloudiness</option>
-  <option>Wind Speed</option>
-</select>
+    <h2><a href="index.html">Latitude</a></h2>
 
+    <ul>
+      <li>
+      <select class="sel" name="plots" onchange="location = this.value;">
+       <option>Plots</option> 
+  <option value="first_page.html">Max Temperature</a></option>
+  <option value="second_page.html">Humidity</a></option>
+  <option value="third_page.html">Cloudiness</a></option>
+  <option value="fourth_page.html">Wind Speed</a></option>
+</li>
+  </select>
 
-<ul>
-  <li>Comparison</li>
-  <li>Data</li>
+  <li><a href="comparisons.html">Comparison</a></li>
+  <li><a href="data_page.html">Data</a></li>
 </ul>
 </div>
 
 </nav>
 
 <body>
-  <h1>Summary: Latitude vs. X</h1>
 
-  <p><img src="Resources/assets/images/Fig1.png" alt="Scatter PLot" height="200" 
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+  <div class="card-deck">
+    <div class="card">
+<div class="card-body">
+  <h4 class="card-title">Summary: Latitude vs. X</h4>
+ 
+  <p class="card-text"><img src="Resources/assets/images/Fig1.png" alt="Scatter PLot" height="200" 
     width="200"/>
     The purpose of this project was to analyze how weather changes as you get closer to the equator.
-    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-  </p>
-
-  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.<br>
+    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
     Factors we looked at included: temperature , cloudiness, wind speed and humidity.
     This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions 
     of any trends and correlations witnessed.
   </p>
-   <img src="Resources/assets/images/Fig1.png" alt="Scatter PLot" height="400" 
-    width="400"/>
-    <img src="Resources/assets/images/Fig2.png" alt="Scatter PLot 2" height="400" 
-    width="400"/>
-    <img src="Resources/assets/images/Fig3.png" alt="Scatter PLot 3" height="400" 
-    width="400"/>
-    <img src="Resources/assets/images/Fig1.png" alt="Scatter PLot 4" height="400" 
-    width="400"/>
-
-    
-  
+</div>
+<div class="row row-cols-1 row-cols-md-2"></div>
+<div class="col mb-4">
+  <div class="card-deck">
+  <div class="card">
+    <h5 class="card-title">Visualizations</h5>
+    <a href="first_page.html"><img src="Resources/assets/images/Fig1.png"  class="card-image-top" alt="Scatter PLot" height="200" 
+    width="200"/></a>
+    </div>
+    </div>
+    <div class="col mb-4">
+    <div class="card-deck">
+      <div class="card">
+        <a href="second_page.html"><img src="Resources/assets/images/Fig2.png" class="card-image-top" alt="Scatter PLot 2" height="200" 
+    width="200"/></a>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card-deck">
+      <div class="card">
+      <a href="third_page.html"><img src="Resources/assets/images/Fig3.png" class="card-image-top" alt="Scatter PLot 3" height="200" 
+    width="200"/></a>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card-deck">
+      <div class="card">
+        <a href="fourth_page.html"><img src="Resources/assets/images/Fig4.png" class="card-image-top" alt="Scatter PLot 4" height="200" 
+    width="200"/></a>
+  </div>
+    </div>
+  </div>
+  </div>
+    </div>
       
 </body>
+</html>
