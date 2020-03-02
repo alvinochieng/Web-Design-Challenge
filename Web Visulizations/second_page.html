@@ -13,26 +13,28 @@
 </head>
 
 <nav class="navbar">
-  <div class="container">
     <h2><a href="index.html">Latitude</a></h2>
-<select>
+
+    <ul>
+      <li>
+<select class="sel" onchange="location = this.value;">
   <option>Plots</option>
-  <option>Max Temperature</option>
-  <option>Humidity</option>
-  <option>Cloudiness</option>
-  <option>Wind Speed</option>
+  <option value="first_page.html">Max Temperature</option>
+  <option value="second_page.html">Humidity</option>
+  <option value="third_page.html">Cloudiness</option>
+  <option value="fourth_page.html">Wind Speed</option>
+</li>
 </select>
 
-
-<ul>
-  <li>Comparison</li>
-  <li>Data</li>
+  <li><a href="comparisons.html">Comparison</a></li>
+  <li><a href="data_page.html">Data</a></li>
 </ul>
-</div>
 
 </nav>
 
 <body>
-    <h1>Humidity</h1>
+    <h3>Humidity</h3>
     <img src="Resources/assets/images/Fig2.png" />
+
 </body>
+</html>
