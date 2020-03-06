@@ -26,3 +26,20 @@ body{
 a {
     color: inherit;
 }
+
+.card {
+    display: block;
+   overflow: auto;
+}
+
+@media (max-width: 768px) {
+    .navbar{
+        padding: inherit;
+        max-height: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        border: olivedrab;
+    }
+   }
