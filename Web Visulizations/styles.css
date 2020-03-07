@@ -26,7 +26,7 @@ a {
 }
 
 .active, .dropdown-menu .dropdown-item:active a:hover{
-    background-color:rgb(165, 155, 155)!important; 
+    background-color:rgb(165, 155, 155); 
 }
 
 img{
@@ -48,5 +48,4 @@ img{
 .navbar-brand{
     padding: 10px;
 }
-
 }
