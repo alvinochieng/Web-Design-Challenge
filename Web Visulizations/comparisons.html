@@ -4,7 +4,9 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Comparison</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bootstrap visualization 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -12,28 +14,46 @@
 
 </head>
 
-<nav class="navbar  navbar-light" style="background-color: lightblue">
-  <div class="p-3 mb-2 bg-success text-white">
-    <h2><a href="index.html" class="main image">Latitude</a></h2>
-</div>
+<body>
 
-    <ul>
-      <li>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <select class="sel" onchange="location = this.value;">
-  <option>Plots</option>
-  <option value="first_page.html">Max Temperature</option>
-  <option value="second_page.html">Humidity</option>
-  <option value="third_page.html">Cloudiness</option>
-  <option value="fourth_page.html">Wind Speed</option>
-</li>
-</select>
+<div class="navigation">
+<nav class="navbar navbar-expand-lg  navbar-light" style="background-color: lightblue">
+  <a class="navbar-brand" style="background-color: rgb(107, 211, 107);" href="index.html">
+    Latitude</a>
+    <button class="navbar-toggler" type="button"
+    data-toggle="collapse" data-target="#navbarNavDropdown" 
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <li><a href="comparisons.html">Comparison</a></li>
-  <li><a href="data_page.html">Data</a></li>
-</ul>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+        data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots
+      </a>
 
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="first_page.html">Max Temperature</a>
+        <a class="dropdown-item" href="second_page.html">Humidity</a>
+        <a class="dropdown-item" href="third_page.html">Cloudiness</a>
+        <a class="dropdown-item" href="fourth_page.html">Wind Speed</a>
+      </div>
+      </li>
+
+  <li class="nav-item"><a class="nav-link" href="comparisons.html">Comparison</a>
+  </li>
+  <li class="nav-item"><a class="nav-link" href="data_page.html">Data</a>
+  </li>
+  
+  </ul>
+  </div>
 </nav>
+</div>
 
 <body><br>
 <h3>Comparison: Latitude vs X</h3>
