@@ -12,9 +12,9 @@
 
 </head>
 
-<nav class="navbar  navbar-light" style="background-color:lightblue">
+<nav class="navbar navbar-light" style="background-color:lightblue">
   <div class="p-3 mb-2 bg-success text-white">
-    <h2><a href="index.html">Latitude</a></h2>
+    <h2><a class="navbar-brand" href="index.html">Latitude</a></h2>
 </div>
 
     <ul>
@@ -39,17 +39,17 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-12">
+      <div class="col-lg-7 col-md-12 main image">
         <div class="card">
 
   <h4 class="title">Summary: Latitude vs. X</h4>
  
-  <p><img src="Resources/assets/images/Fig1.png" style="float:left" 
+  <img src="Resources/assets/images/Fig1.png" style="float:left" 
    alt="Scatter PLot" height="200" width="200"/>
-    The purpose of this project was to analyze how weather changes as you get closer to the equator.
+    <p class="description"> The purpose of this project was to analyze how weather changes as you get closer to the equator.
     To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
   </p>
-  <p>
+  <p class="description">
     After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
     Factors we looked at included: temperature , cloudiness, wind speed and humidity.
     This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions 
